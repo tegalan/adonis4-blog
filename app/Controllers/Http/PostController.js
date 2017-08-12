@@ -4,15 +4,16 @@ const Post = use('App/Models/Post')
 
 class PostController {
 
-    async index() {
+    async index({ view }) {
         let posts = await Post.all()
-        return posts
+        // return posts
+        return view.render('post.index',{posts:posts.toJSON()})
     }
 
-    async detail({params}) {
+    async detail({ view, params }) {
         let post = await Post.find(params.id)
 
-        return post
+        return view.render('post.detail', { post: post.toJSON() })
     }
 
 }

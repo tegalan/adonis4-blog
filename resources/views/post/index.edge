@@ -1,0 +1,17 @@
+@layout('master')
+
+@section('title')
+Posts Index
+@endsection
+
+@section('content')
+
+@include('partial.navbar')
+
+<div class="container">
+    @each(post in posts)
+        @!component('components.post', id = post.id, title = post.title, content = post.content)
+    @endeach
+</div>
+
+@endsection

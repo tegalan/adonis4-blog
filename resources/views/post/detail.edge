@@ -1,0 +1,17 @@
+@layout('master')
+
+@section('title')
+{{ post.title }} | Adonis Blog
+@endsection
+
+@section('content')
+
+@include('partial.navbar')
+
+<div class="container">
+    <h1>{{ post.title }}</h1>
+    <div class="content">
+        {{ post.content }}
+    </div>
+</div>
+@endsection

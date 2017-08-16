@@ -1,0 +1,15 @@
+@layout('master')
+
+@section('title')
+Dashboard
+@endsection
+
+@section('content')
+
+@include('partial.navbar')
+
+<div class="container">
+    <h1>Hello {{ user.username }}</h1>
+</div>
+
+@endsection

@@ -15,6 +15,22 @@
 
 const Route = use('Route')
 
+Route.group('guest', () => {
+    Route.get('/login', 'DashboardController.login_page')
+    Route.post('/login', 'DashboardController.login')
+}).prefix('dashboard')
+  .middleware('guest')
+
+Route.group('admin', () => {
+    Route.get('/post/:id', 'PostController.detail')
+    Route.get('/post', 'PostController.index')
+    Route.get('/logout', 'DashboardController.logout')
+    Route.get('/', 'DashboardController.index')    
+}).prefix('dashboard')
+  .middleware(['admin'])
+
+
+
 Route.get('/', ({ request }) => {
   return `
   <html>
@@ -30,7 +46,4 @@ Route.get('/', ({ request }) => {
     </body>
   </html>
   `
-})
-
-Route.get('/post', 'PostController.index')
-Route.get('/post/:id', 'PostController.detail')
+}).middleware('guest')

@@ -11,7 +11,11 @@ const Server = use('Server')
 | match.
 |
 */
-const globalMiddleware = []
+const globalMiddleware = [
+  'Adonis/Middleware/BodyParser',
+  'Adonis/Middleware/Session',
+  'Adonis/Middleware/AuthInit'
+]
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +34,11 @@ const globalMiddleware = []
 | Route.get().middleware('auth')
 |
 */
-const namedMiddleware = {}
+const namedMiddleware = {
+  auth: 'Adonis/Middleware/Auth',
+  guest: 'App/Middleware/GuestMiddleware',
+  admin: 'App/Middleware/AdminMiddleware'
+}
 
 Server
   .registerGlobal(globalMiddleware)

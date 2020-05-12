@@ -16,7 +16,7 @@
   "private": true,
   "dependencies": {
     "@adonisjs/ace": "5.0.8",
-    "@adonisjs/auth": "2.0.11",
+    "@adonisjs/auth": "3.1.0",
     "@adonisjs/bodyparser": "1.0.8",
     "@adonisjs/fold": "4.0.9",
     "@adonisjs/framework": "4.0.31",

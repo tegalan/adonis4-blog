@@ -17,7 +17,7 @@
   "dependencies": {
     "@adonisjs/ace": "9.1.0",
     "@adonisjs/auth": "3.1.0",
-    "@adonisjs/bodyparser": "2.0.9",
+    "@adonisjs/bodyparser": "2.2.5",
     "@adonisjs/fold": "8.1.0",
     "@adonisjs/framework": "5.0.13",
     "@adonisjs/ignitor": "2.0.8",

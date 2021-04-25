@@ -22,7 +22,7 @@
     "@adonisjs/framework": "5.0.13",
     "@adonisjs/ignitor": "2.0.8",
     "@adonisjs/lucid": "12.0.0",
-    "@adonisjs/session": "6.0.1"
+    "@adonisjs/session": "6.0.2"
   },
   "devDependencies": {
     "sqlite3": "5.0.2"

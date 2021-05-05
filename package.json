@@ -15,7 +15,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@adonisjs/ace": "11.0.0",
+    "@adonisjs/ace": "11.0.1",
     "@adonisjs/auth": "8.0.0",
     "@adonisjs/bodyparser": "7.1.0",
     "@adonisjs/fold": "8.1.1",

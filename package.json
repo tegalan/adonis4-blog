@@ -18,7 +18,7 @@
     "@adonisjs/ace": "11.0.1",
     "@adonisjs/auth": "8.0.3",
     "@adonisjs/bodyparser": "7.1.1",
-    "@adonisjs/fold": "8.1.1",
+    "@adonisjs/fold": "8.1.2",
     "@adonisjs/framework": "5.0.13",
     "@adonisjs/ignitor": "2.0.8",
     "@adonisjs/lucid": "14.0.1",

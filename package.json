@@ -21,7 +21,7 @@
     "@adonisjs/fold": "8.1.2",
     "@adonisjs/framework": "5.0.13",
     "@adonisjs/ignitor": "2.0.8",
-    "@adonisjs/lucid": "14.0.2",
+    "@adonisjs/lucid": "14.1.0",
     "@adonisjs/session": "6.0.3"
   },
   "devDependencies": {
